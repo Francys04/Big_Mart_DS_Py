@@ -77,6 +77,7 @@ print(big_mart_data['Item_Fat_Content'].value_counts())
 '''Label Encoding'''
 encoder = LabelEncoder()
 
+
 big_mart_data['Item_Identifier'] = encoder.fit_transform(big_mart_data['Item_Identifier'])
 
 big_mart_data['Item_Fat_Content'] = encoder.fit_transform(big_mart_data['Item_Fat_Content'])
@@ -90,6 +91,7 @@ big_mart_data['Outlet_Size'] = encoder.fit_transform(big_mart_data['Outlet_Size'
 big_mart_data['Outlet_Location_Type'] = encoder.fit_transform(big_mart_data['Outlet_Location_Type'])
 
 big_mart_data['Outlet_Type'] = encoder.fit_transform(big_mart_data['Outlet_Type'])
+
 
 print(big_mart_data.head())
 
